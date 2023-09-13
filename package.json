@@ -1,0 +1,22 @@
+{
+  "name": "tiny-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist && cp src/index.html dist",
+    "dev": "watch 'pnpm build && pnpm serve' src",
+    "serve": "serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "serve": "^14.2.1",
+    "watch": "^1.0.2"
+  }
+}
